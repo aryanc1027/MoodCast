@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodCast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <button id="unit-toggle" class="top-left-button">°C/°F</button>
+            <h1>MoodCast</h1>
+            <p>Discover playlists based on your local weather</p>
+            <button id="login-button">Log in to Spotify</button> 
+        </header>
+       
+        <main>
+            <div class="left-column">
+                <section class="search-section">
+                    <form id="search-form">
+                        <input type="text" id="city-input" placeholder="Enter a city" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
+                <section id="weather-display" class="weather-section"></section>
+                <section id="forecast-display" class="forecast-section"></section>
+            </div>
+            <div class="right-column">
+                <section id="playlist-display" class="playlist-section"></section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Made with ❤️ for weather & music lovers</p>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
